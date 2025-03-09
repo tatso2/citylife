@@ -3,7 +3,7 @@ local M = {}
 local config = require("citylife.config")
 local highlights = require("citylife.highlights")
 
-M.setup = function()
+M.setup = function(user_conf)
 	if vim.fn.has("termguicolors") == 1 then
 		vim.o.termguicolors = true
 	end
