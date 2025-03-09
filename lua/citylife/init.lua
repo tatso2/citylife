@@ -1,0 +1,18 @@
+local M = {}
+
+local config = require("citylife.config")
+local highlights = require("citylife.highlights")
+
+M.load = function()
+	if vim.fn.has("termguicolors") == 1 then
+		vim.o.termguicolors = true
+	end
+
+	highlights.set_highlights()
+
+	if config.options.transparent then
+		vim.api.nvim_set_hl(0, "Normal", { bg = "None" })
+	end
+end
+
+return M
