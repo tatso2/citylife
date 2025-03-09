@@ -15,14 +15,4 @@ M.colors = {
 	warning2 = "#ffa82e",
 }
 
--- function M.set_highlights()
--- 	local highlight = vim.api.nvim_set_hl
---
--- 	highlight(0, "Normal", { fg = M.colors.fg, bg = M.colors.bg })
--- end
---
--- function M.load()
--- 	M.set_highlights()
--- end
-
 return M
