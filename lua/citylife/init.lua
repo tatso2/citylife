@@ -11,7 +11,7 @@ M.load = function()
 	highlights.set_highlights()
 
 	if config.options.transparent then
-		vim.api.nvim_set_hl(0, "Normal", { bg = "None" })
+		vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
 	end
 end
 
