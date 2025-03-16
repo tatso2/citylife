@@ -16,9 +16,6 @@ M.colors = {
 	text5 = "#757881",
 	text6 = "#696C75",
 
-	-- Sub texts
-	subtext0 = "#999999", -- comment
-
 	-- Accent colours for mainly syntax
 	red = "#E59192",
 	orange = "#E5B995",
@@ -27,20 +24,20 @@ M.colors = {
 	yellow = "#e4e595",
 	sky = "#95d8e5",
 	lavender = "#95ABE5",
+	blue = "#95C1E5",
 
 	-- Sub accent colours
 	sub_sakura = "#DABEE5",
 	sub_lavender = "#BEC4E5",
 	sub_sky = "#BEDFE5",
 	sub_green = "#CDE5BE",
+	sub_orange = "#E5D3BE",
 
 	-- Git related
 	git_red = "#E59991",
 	git_yellow = "#E5E28A",
 	git_green = "#75E5AA",
 	git_blue = "#9AAAE5",
-
-	-- Error, warning, and info
 }
 
 return M

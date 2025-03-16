@@ -6,7 +6,7 @@ local C = require("citylife.color.night").colors
 M = {
 	-- Syntax highlighting
 	Normal = { fg = C.text, bg = C.base },
-	Comment = { fg = C.text5, italic = false },
+	Comment = { fg = C.text4, italic = false },
 	SpeacialComment = { link = "Special" },
 	Keyword = { fg = C.sakura, bold = false },
 	Constant = { fg = C.lavender },
@@ -19,6 +19,14 @@ M = {
 	Special = { fg = C.sub_lavender },
 	Error = { fg = C.red },
 	MoreMsg = { fg = C.green },
+	ModeMsg = { fg = C.blue },
+
+	-- Diagnostics
+	DiagnosticError = { fg = C.git_red },
+	DiagnosticWarn = { fg = C.git_yellow },
+	DiagnosticInfo = { fg = C.git_blue },
+	DiagnosticHint = { fg = C.git_blue },
+	DiagnosticOk = { fg = C.git_green },
 
 	-- NeoVim
 	healthError = { fg = C.red },
@@ -30,7 +38,7 @@ M = {
 	StatusLine = { fg = C.text, bg = C.base1 },
 	LineNr = { fg = C.text6 },
 	WinSeparator = { fg = C.base3 },
-	-- Title = { fg = C.text, bg = C.text4 },
+
 	FloatTitle = { fg = C.text },
 	FloatBorder = { fg = C.text5 },
 	NormalFloat = { fg = C.text, bg = C.base }, -- Can be darker
@@ -62,6 +70,10 @@ M = {
 	NeoTreeGitUntracked = { fg = C.git_blue },
 	NeoTreeGitUnstaged = { fg = C.git_red },
 	NeoTreeGitStaged = { fg = C.git_green },
+
+	-- Mason
+	-- MasonHeader = { fg = C.text, bg = C.base, style = { "bold" } },
+	-- MasonHeaderSecondary = { fg = C.text6 },
 }
 
 return M
