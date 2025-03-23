@@ -8,6 +8,7 @@ M.setup = function(opts)
 		vim.o.termguicolors = true
 	end
 
+	-- Append the user configurations and plugins to the default ones
 	M.groups = vim.tbl_deep_extend("force", config, opts or {})
 end
 

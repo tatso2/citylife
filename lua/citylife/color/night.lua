@@ -1,30 +1,27 @@
 local M = {}
 
 M.colors = {
-	-- Base colours (mianly used for vim UI)
-	base = "#22242A", -- editor background
-	base1 = "#2E3036", -- editor status line
-	base2 = "#282A30", -- editor sidebar
-	base3 = "#51545C", -- window separator
-	base4 = "#34363D", -- Float window
+	--- Editor UI
+	bg = "#22242A", -- base color, editor background
+	bg_float = "#34363D", -- Float window
+	bg_status = "#2E3036", -- editor status line
+	bg_sidebar = "#282A30", -- editor sidebar
+	bg_separator = "#51545C", -- window separator
+	bg_border = "#757881", -- float border
 
 	text = "#cdd1df", -- main text
-	text1 = "#BBBFCC",
-	text2 = "#AAADBA",
-	text3 = "#989BA7",
-	text4 = "#868994",
-	text5 = "#757881",
-	text6 = "#696C75",
+	comment = "#868994", -- comment
+	text_dim = "#696C75", -- lineNr, hidden files, etc.
 
 	-- Accent colours for mainly syntax
-	red = "#E59192",
-	orange = "#E5B995",
-	green = "#bae595",
-	sakura = "#e595d1",
-	yellow = "#e4e595",
-	sky = "#95d8e5",
-	lavender = "#95ABE5",
-	blue = "#95C1E5",
+	red = "#E3A8A9",
+	orange = "#E3C2A8", -- numbers
+	green = "#BFE3A8", -- strings
+	sakura = "#E3A8D4", -- keywords
+	yellow = "#E2E3A8",
+	sky = "#A8D9E3",
+	lavender = "#A8B8E3",
+	blue = "#A8C8E3",
 
 	-- Sub accent colours
 	sub_sakura = "#DABEE5",
