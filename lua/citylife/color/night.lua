@@ -8,9 +8,12 @@ M.colors = {
 	bg_sidebar = "#282A30", -- editor sidebar
 	bg_separator = "#51545C", -- window separator
 	bg_border = "#757881", -- float border
+	bg_word_hl = "#5D6068",
+	bg_cursor = "#34363F",
+	bg_cursor_dark = "#45484F", -- cursor for pmenu
 
 	text = "#cdd1df", -- main text
-	comment = "#868994", -- comment
+	comment = "#8C8F9A", -- comment
 	text_dim = "#696C75", -- lineNr, hidden files, etc.
 
 	-- Accent colours for mainly syntax
@@ -21,7 +24,7 @@ M.colors = {
 	yellow = "#E2E3A8",
 	sky = "#A8D9E3",
 	lavender = "#A8B8E3",
-	blue = "#A8C8E3",
+	cloud = "#A8C1E3",
 
 	-- Sub accent colours
 	sub_sakura = "#DABEE5",
