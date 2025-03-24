@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "gender": {
+      "oneOf": [
+        { "const": "male", "title": "Male" },
+        { "const": "female", "title": "Female", "label": "F" }
+      ]
+    }
+  }
+}

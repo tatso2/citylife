@@ -13,7 +13,8 @@ M.colors = {
 	bg_cursor_dark = "#45484F", -- cursor for pmenu
 
 	text = "#cdd1df", -- main text
-	comment = "#8C8F9A", -- comment
+	text_sub = "#c7cbd9", --
+	comment = "#9EA1AD", -- comment
 	text_dim = "#696C75", -- lineNr, hidden files, etc.
 
 	-- Accent colours for mainly syntax
@@ -38,6 +39,8 @@ M.colors = {
 	git_yellow = "#E5E28A",
 	git_green = "#75E5AA",
 	git_blue = "#9AAAE5",
+
+	none = "NONE",
 }
 
 return M

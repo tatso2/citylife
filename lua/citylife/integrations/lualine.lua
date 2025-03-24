@@ -3,8 +3,8 @@ return function()
 
 	local citylife = {}
 	citylife.normal = {
-		a = { bg = C.green, fg = C.bg, gui = "bold" },
-		b = { bg = C.bg_status, fg = C.green },
+		a = { bg = C.lavender, fg = C.bg, gui = "bold" },
+		b = { bg = C.bg_status, fg = C.lavender },
 		c = { bg = "NONE", fg = C.text },
 	}
 	citylife.insert = {
@@ -12,12 +12,12 @@ return function()
 		b = { bg = C.bg, fg = C.cloud },
 	}
 	citylife.visual = {
-		a = { bg = C.lavender, fg = C.bg, gui = "bold" },
-		b = { bg = C.bg, fg = C.lavender },
-	}
-	citylife.replace = {
 		a = { bg = C.sakura, fg = C.bg, gui = "bold" },
 		b = { bg = C.bg, fg = C.sakura },
+	}
+	citylife.replace = {
+		a = { bg = C.green, fg = C.bg, gui = "bold" },
+		b = { bg = C.bg, fg = C.green },
 	}
 	citylife.command = {
 		a = { bg = C.sky, fg = C.bg, gui = "bold" },

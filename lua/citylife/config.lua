@@ -15,7 +15,7 @@ M = {
 	Normal = { fg = C.text, bg = C.bg },
 	Number = { fg = C.orange },
 	SpeacialComment = { link = "Special" },
-	Special = { fg = C.sub_sakura }, -- bracket, type annotations, etc.
+	Special = { fg = C.cloud }, -- bracket, type annotations, etc.
 	String = { fg = C.green },
 	Type = { fg = C.sky },
 	Exception = { fg = C.sub_lavender },
@@ -59,8 +59,10 @@ M = {
 	DiffText = { bg = C.git_blue },
 
 	-- Terminal
-
 	-- Plugins integrations below --
+	-- Surround
+	NvimSurroundHighlight = { sp = C.sakura, underline = true },
+
 	-- Gitsigns
 	GitSignsAdd = { fg = C.git_green },
 	GitSignsChange = { fg = C.git_yellow },
@@ -93,7 +95,7 @@ M = {
 	NeoTreeGitConflict = { fg = C.git_red },
 	NeoTreeGitDeleted = { fg = C.git_red },
 	NeoTreeGitIgnored = { fg = C.text_dim },
-	NeoTreeGitModified = { fg = C.git_yellow },
+	NeoTreeGitModified = { fg = C.yellow },
 	NeoTreeGitStaged = { fg = C.git_green },
 	NeoTreeGitUnstaged = { fg = C.git_red },
 	NeoTreeGitUntracked = { fg = C.git_blue },
@@ -114,7 +116,227 @@ M = {
 	-- Illuminate
 	IlluminatedWordText = { bg = C.bg_word_hl },
 	IlluminatedWordRead = { bg = C.bg_word_hl },
-	IlluminatedWordWrite = { bg = C.bg_wrod_hl },
+	IlluminatedWordWrite = { bg = C.bg_word_hl },
+
+	-- Telescope
+	TelescopeBorder = { link = "FloatBorder" },
+	TelescopeMatching = { fg = C.sakura },
+	TelescopePreviewTitle = { fg = C.sub_lavender },
+	TelescopePromptNormal = { fg = C.text },
+	TelescopePromptCounter = { fg = C.sub_lavender },
+	TelescopePromptPrefix = { fg = C.lavender },
+	TelescopePromptTitle = { fg = C.sub_lavender },
+	TelescopeResultsTitle = { fg = C.sub_lavender },
+	TelescopeSelection = { fg = C.text, bg = C.bg_cursor_dark },
+	TelescopeSelectionCaret = { fg = C.lavender },
+
+	-- Mason
+	MasonError = { fg = C.red },
+	MasonHeader = { fg = C.bg, bg = C.lavender, bold = true },
+	MasonHeaderSecondary = { fg = C.bg, bg = C.sky, bold = true },
+	MasonHeading = { fg = C.cloud, bold = true },
+	MasonHighlight = { fg = C.sakura }, -- tickmark
+	MasonHighlightBlock = { fg = C.bg, bg = C.cloud },
+	MasonHighlightBlockBold = { fg = C.bg, bg = C.lavender, bold = true }, -- Selected BLocks of All, LSP, etc.
+	MasonMuted = { fg = C.text_dim },
+	MasonMutedBlock = { fg = C.text, bg = C.bg_word_hl }, -- Unselected Blocks of ALL, LSP, etc.
+	MasonMutedBlockBold = { fg = C.bg, bg = C.yellow, bold = true },
+	MasonWarning = { fg = C.yellow },
+	MasonBackdrop = { bg = "#000003" },
+
+	-- Aerial
+	AerialLine = { fg = C.yellow, bg = C.none }, -- selected line
+	AerialGuide = { fg = C.bg_border },
+
+	AerialArrayIcon = { link = "@constant" },
+	AerialBoolenIcon = { link = "@boolean" },
+	AerialClassIcon = { link = "@type" },
+	AerialConstantIcon = { link = "@constant" },
+	AerialConstructorIcon = { link = "@constructor" },
+	AerialEnumIcon = { link = "@type" },
+	AerialEnumMemberIcon = { link = "@field" },
+	AerialEventIcon = { link = "@type" },
+	AerialFieldIcon = { link = "@field" },
+	AerialFileIcon = { link = "@text.uri" },
+	AerialFunctionIcon = { link = "@function" },
+	AerialInterfaceIcon = { link = "@type" },
+	AerialKeyIcon = { link = "@type" },
+	AerialMethodIcon = { link = "@method" },
+	AerialModuleIcon = { link = "@namespace" },
+	AerialNamespaceIcon = { link = "@namespace" },
+	AerialNullIcon = { link = "@type" },
+	AerialNumberIcon = { link = "@number" },
+	AerialObjectIcon = { link = "@type" },
+	AerialOperatorIcon = { link = "@operator" },
+	AerialPackageIcon = { link = "@namespace" },
+	AerialPropertyIcon = { link = "@property" },
+	AerialStringIcon = { link = "@string" },
+	AerialStructIcon = { link = "@type" },
+	AerialTypeParameterIcon = { link = "@type" },
+	AerialVariableIcon = { link = "@constant" },
+
+	-- cmp
+	CmpItemAbbr = { fg = C.text }, -- auto completion suggestion text
+	CmpItemAbbrDepreciated = { fg = C.text_dim, strikethrough = true },
+	CmpItemKind = { fg = C.sky },
+	CmpItemMenu = { fg = C.text },
+	CmpItemAbbrMatch = { fg = C.text, bold = true },
+	CmpAbbrAbbrMatchFuzzy = { fg = C.text, bold = true },
+
+	CmpItemKindClass = { fg = C.yellow },
+	CmpItemKindColor = { fg = C.sakura },
+	CmpItemKindConstant = { fg = C.lavender },
+	CmpItemKindConstructor = { fg = C.orange },
+	CmpItemKindCopilot = { fg = C.lavender },
+	CmpItemKindEnum = { fg = C.green },
+	CmpItemKindEnumMember = { fg = C.sakura },
+	CmpItemKindEvent = { fg = C.sky },
+	CmpItemKindField = { fg = C.sub_green },
+	CmpItemKindFile = { fg = C.sky },
+	CmpItemKindFolder = { fg = C.cloud },
+	CmpItemKindFunction = { fg = C.yellow },
+	CmpItemKindInterface = { fg = C.yellow },
+	CmpItemKindKeyword = { fg = C.sakura },
+	CmpItemKindMethod = { fg = C.cloud },
+	CmpItemKindModule = { fg = C.sub_sky },
+	CmpItemKindOperator = { fg = C.sky },
+	CmpItemKindProperty = { fg = C.green },
+	CmpItemKindReference = { fg = C.sakura },
+	CmpItemKindSnippet = { fg = C.cloud },
+	CmpItemKindStruct = { fg = C.sky },
+	CmpItemKindText = { fg = C.green },
+	CmpItemKindTypeParameter = { fg = C.sky },
+	CmpItemKindUnit = { fg = C.green },
+	CmpItemKindValue = { fg = C.orange },
+	CmpItemKindVariable = { fg = C.cloud },
+
+	-- treesitter
+	-- Identifiers
+	["@variable"] = { fg = C.text },
+	["@variable.builtin"] = { fg = C.sky }, -- self in Python
+	["@variable.parameter"] = { fg = C.lavender },
+	["@variable.member"] = { fg = C.lavender },
+
+	["@constant"] = { link = "Constant" },
+	["@constant.builtin"] = { fg = C.lavender }, -- built in consts like None in Python
+	["@constant.macro"] = { link = "Macro" },
+
+	-- Literals
+	["@string"] = { link = "String" },
+	["@string.documentation"] = { fg = C.sub_green },
+	["@string.regexp"] = { fg = C.sakura },
+	["@string.special"] = { link = "Special" },
+	["@string.special.path"] = { link = "Special" },
+	["@string.special.symbol"] = { fg = C.sakura },
+	["@string.special.url"] = { fg = C.sub_sakura },
+
+	["@character"] = { link = "Character" },
+	["@character.special"] = { link = "SpecialChar" },
+
+	["@boolean"] = { link = "Boolean" },
+	["@number"] = { link = "Number" },
+	["@number.float"] = { link = "Float" },
+
+	-- Types
+	["@type"] = { link = "Type" },
+	["@type.builtin"] = { fg = C.sub_sakura }, -- int, float, etc.
+	["@type.definition"] = { link = "Type" },
+
+	["@attribute"] = { link = "Constant" }, -- python decorators
+	["@property"] = { fg = C.sky },
+
+	-- Functions
+	["@function"] = { link = "Function" },
+	["@function.builtin"] = { fg = C.yellow },
+	["@function.call"] = { link = "Function" },
+	["@function.macro"] = { fg = C.yellow }, -- rust
+
+	["@function.method"] = { link = "Function" },
+	["@function.method.call"] = { link = "Function" },
+
+	["@constructor"] = { fg = C.yellow }, -- {} in lua, __init__ in Python
+	["@operator"] = { link = "Operator" },
+
+	-- Keywords
+	["@keyword"] = { link = "Keyword" },
+	["@keyword.modifier"] = { link = "Keyword" },
+	["@keyword.type"] = { link = "Keyword" },
+	["@keyword.coroutine"] = { link = "Keyword" },
+	["@keyword.function"] = { fg = C.sub_sakura },
+	["@keyword.operator"] = { link = "Operator" },
+	["@keyword.import"] = { fg = C.sub_sakura },
+	["@keyword.repeat"] = { fg = C.cloud }, -- for, while
+	["@keyword.return"] = { fg = C.sub_sakura },
+	["@keyword.debug"] = { link = "Exception" },
+	["@keyword.exception"] = { link = "Exception" },
+	["@keyword.conditional"] = { fg = C.sakura },
+	["@keyword.conditional.ternary"] = { link = "Operator" },
+
+	["@keyword.directive"] = { link = "PreProc" },
+	["@keyword.directive.define"] = { link = "Define" },
+
+	-- Punctuation
+	["@punctuation.delimiter"] = { link = "Delimiter" },
+	["@punctuation.bracket"] = { fg = C.text_sub }, -- [], ()
+	["@punctuation.special"] = { link = "Special" },
+
+	-- JS & derivative
+	["@keyword.export"] = { fg = C.sky },
+
+	-- Comment
+	["@comment"] = { link = "Comment" },
+	["@comment.documentation"] = { link = "Comment" },
+	["@comment.error"] = { fg = C.bg, bg = C.red },
+	["@comment.warning"] = { fg = C.bg, bg = C.yellow },
+	["@comment.hint"] = { fg = C.bg, bg = C.sky },
+	["@comment.todo"] = { fg = C.bg, bg = C.lavender },
+	["@comment.note"] = { fg = C.bg, bg = C.sakura },
+
+	-- Markup
+	["@markup"] = { fg = C.text },
+
+	-- Diff
+	["@diff.plus"] = { link = "diffAdded" },
+	["@diff.minus"] = { link = "diffRemoved" },
+	["@diff.delta"] = { link = "diffChanged" },
+
+	-- Tags
+	["@tag"] = { fg = C.orange }, -- h1, div, html, etc. in html
+	["@tag.builtin"] = { fg = C.yellow }, -- tag names in jsx, tsx
+	["@tag.attribute"] = { fg = C.sky }, -- attribute in a tag
+	["@tag.delimiter"] = { fg = C.lavender }, -- </>, etc.
+
+	-- Misc
+	["@error"] = { link = "Error" },
+
+	-- Language specific:
+	-- markdown
+	["@markup.heading.1.markdown"] = { link = "rainbow1" },
+	["@markup.heading.2.markdown"] = { link = "rainbow2" },
+	["@markup.heading.3.markdown"] = { link = "rainbow3" },
+	["@markup.heading.4.markdown"] = { link = "rainbow4" },
+	["@markup.heading.5.markdown"] = { link = "rainbow5" },
+	["@markup.heading.6.markdown"] = { link = "rainbow6" },
+
+	-- bash
+	["@function.builtin.bash"] = { fg = C.sub_sakura },
+
+	-- toml
+	["@property.toml"] = { fg = C.sky },
+
+	-- json
+	["@label.json"] = { fg = C.sky },
+
+	-- C/CPP
+	["@type.builtin.c"] = { fg = C.sky },
+	["@property.cpp"] = { fg = C.text },
+	["@type.builtin.cpp"] = { fg = C.sky },
+
+	-- Lua
+	["@constructor.lua"] = { fg = C.sub_sakura },
+
+	-- gitignore
+	["@string.special.path.gitignore"] = { fg = C.text },
 }
 
 return M
