@@ -46,6 +46,7 @@ M = {
 	NormalFloat = { fg = C.text, bg = C.bg }, -- Can be darker
 	StatusLine = { fg = C.text, bg = C.bg_status },
 	WinSeparator = { fg = C.bg_separator },
+	SignColumn = { fg = C.sub_lavender }, -- fold arrows
 
 	Pmenu = { bg = C.bg_float, fg = C.text },
 	PmenuSel = { bg = C.bg_cursor_dark },
@@ -59,6 +60,7 @@ M = {
 	DiffText = { bg = C.git_blue },
 
 	-- Terminal
+
 	-- Plugins integrations below --
 	-- Surround
 	NvimSurroundHighlight = { sp = C.sakura, underline = true },
