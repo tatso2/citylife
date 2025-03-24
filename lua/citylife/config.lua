@@ -43,6 +43,9 @@ M = {
 	FloatBorder = { fg = C.bg_border },
 	FloatTitle = { fg = C.text },
 	LineNr = { fg = C.text_dim },
+	LineNrAbove = { fg = C.text_dim },
+	LineNrBelow = { fg = C.text_dim },
+	CursorLineNr = { fg = C.lavender, bold = true },
 	NormalFloat = { fg = C.text, bg = C.bg }, -- Can be darker
 	StatusLine = { fg = C.text, bg = C.bg_status },
 	WinSeparator = { fg = C.bg_separator },
