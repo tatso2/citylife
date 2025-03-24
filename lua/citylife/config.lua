@@ -10,7 +10,7 @@ M = {
 	Float = { link = "Number" },
 	Function = { fg = C.yellow },
 	Keyword = { fg = C.sakura, bold = false },
-	ModeMsg = { fg = C.blue },
+	ModeMsg = { fg = C.sky },
 	MoreMsg = { fg = C.green },
 	Normal = { fg = C.text, bg = C.bg },
 	Number = { fg = C.orange },
@@ -74,7 +74,7 @@ M = {
 
 	-- NeoTree
 	NeoTreeDirectoryName = { link = "Directory" },
-	NeoTreeDirectoryIcon = { fg = C.sky }, -- Folder icon
+	NeoTreeDirectoryIcon = { fg = C.lavender }, -- Folder icon
 	NeoTreeNormal = { fg = C.text, bg = C.bg_sidebar }, -- Sidebar
 	NeoTreeNormalNC = { fg = C.text, bg = C.bg_sidebar }, -- Sidebar non focus
 	NeoTreeIndentMarker = { fg = C.text_dim }, -- lines when folders are expanded
@@ -214,8 +214,8 @@ M = {
 	-- Identifiers
 	["@variable"] = { fg = C.text },
 	["@variable.builtin"] = { fg = C.sky }, -- self in Python
-	["@variable.parameter"] = { fg = C.lavender },
-	["@variable.member"] = { fg = C.lavender },
+	["@variable.parameter"] = { fg = C.sky }, -- function argument
+	["@variable.member"] = { fg = C.sky },
 
 	["@constant"] = { link = "Constant" },
 	["@constant.builtin"] = { fg = C.lavender }, -- built in consts like None in Python
@@ -239,7 +239,7 @@ M = {
 
 	-- Types
 	["@type"] = { link = "Type" },
-	["@type.builtin"] = { fg = C.sub_sakura }, -- int, float, etc.
+	["@type.builtin"] = { fg = C.red }, -- int, float, etc.
 	["@type.definition"] = { link = "Type" },
 
 	["@attribute"] = { link = "Constant" }, -- python decorators
@@ -254,7 +254,8 @@ M = {
 	["@function.method"] = { link = "Function" },
 	["@function.method.call"] = { link = "Function" },
 
-	["@constructor"] = { fg = C.yellow }, -- {} in lua, __init__ in Python
+	["@constructor"] = { fg = C.sky }, -- {} in lua, __init__ in Python
+	["@constructor.python"] = { fg = C.lavender },
 	["@operator"] = { link = "Operator" },
 
 	-- Keywords
@@ -262,11 +263,11 @@ M = {
 	["@keyword.modifier"] = { link = "Keyword" },
 	["@keyword.type"] = { link = "Keyword" },
 	["@keyword.coroutine"] = { link = "Keyword" },
-	["@keyword.function"] = { fg = C.sub_sakura },
+	["@keyword.function"] = { fg = C.sakura }, -- def in py
 	["@keyword.operator"] = { link = "Operator" },
 	["@keyword.import"] = { fg = C.sub_sakura },
 	["@keyword.repeat"] = { fg = C.cloud }, -- for, while
-	["@keyword.return"] = { fg = C.sub_sakura },
+	["@keyword.return"] = { fg = C.sakura }, -- return
 	["@keyword.debug"] = { link = "Exception" },
 	["@keyword.exception"] = { link = "Exception" },
 	["@keyword.conditional"] = { fg = C.sakura },
@@ -319,7 +320,7 @@ M = {
 	["@markup.heading.6.markdown"] = { link = "rainbow6" },
 
 	-- bash
-	["@function.builtin.bash"] = { fg = C.sub_sakura },
+	["@function.builtin.bash"] = { fg = C.sakura },
 
 	-- toml
 	["@property.toml"] = { fg = C.sky },
