@@ -57,10 +57,17 @@ M = {
 	PmenuThumb = { bg = C.sub_lavender },
 	Question = { fg = C.cloud },
 
-	DiffAdd = { bg = C.git_green },
-	DiffChange = { bg = C.git_blue },
-	DiffDelete = { bg = C.git_red },
-	DiffText = { bg = C.git_blue },
+	diffAdded = { fg = C.git_green },
+	diffRemoved = { fg = C.git_red },
+	diffChanged = { fg = C.git_yelllow },
+	diffOldFile = { fg = C.orange },
+	diffNewFile = { fg = C.sakura },
+	diffLine = { fg = C.text_dim },
+	diffIndexLine = { fg = C.lavender },
+	DiffAdd = { fg = C.git_green, bg = C.bg },
+	DiffChange = { fg = C.git_blue, bg = C.bg },
+	DiffDelete = { fg = C.git_red, bg = C.bg },
+	DiffText = { fg = C.git_blue, bg = C.bg },
 
 	-- Terminal
 
@@ -70,11 +77,11 @@ M = {
 
 	-- Gitsigns
 	GitSignsAdd = { fg = C.git_green },
+	GitSignsAddInline = { fg = C.bg, bg = C.git_green },
+	GitSignsAddPreview = { link = "DiffAdd" },
 	GitSignsChange = { fg = C.git_yellow },
 	GitSignsDelete = { fg = C.git_red },
-	GitSignsAddInline = { bg = C.git_green },
 	GitSignsDeleteInline = { bg = C.git_red },
-	GitSignsAddPreview = { link = "DiffAdd" },
 	GitSignsDeletePreview = { link = "DiffDelete" },
 
 	-- NeoTree
