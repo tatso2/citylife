@@ -222,6 +222,37 @@ M = {
 	CmpItemKindValue = { fg = C.orange },
 	CmpItemKindVariable = { fg = C.cloud },
 
+	-- blink
+	BlinkCmpLabel = { fg = C.text }, -- Label of the completion item
+	BlinkCmpLabelDeprecated = { fg = C.text_dim, strikethrough = true },
+	BlinkCmpLabelMatch = { fg = C.text, bold = true },
+	BlinkCmpKindText = { fg = C.green },
+	BlinkCmpKindMethod = { fg = C.cloud },
+	BlinkCmpKindFunction = { fg = C.yellow },
+	BlinkCmpKindConstructor = { fg = C.orange },
+	BlinkCmpKindField = { fg = C.sub_green },
+	BlinkCmpKindVariable = { fg = C.cloued },
+	BlinkCmpKindClass = { fg = C.yellow },
+	BlinkCmpKindInterface = { fg = C.yellow },
+	BlinkCmpKindModule = { fg = C.sub_sky },
+	BlinkCmpKindProperty = { fg = C.green },
+	BlinkCmpKindUnit = { fg = C.green },
+	BlinkCmpKindValue = { fg = C.orange },
+	BlinkCmpKindEnum = { fg = C.green },
+	BlinkCmpKindKeyword = { fg = C.sakura },
+	BlinkCmpKindSnippet = { fg = C.cloud },
+	BlinkCmpKindColor = { fg = C.sakura },
+	BlinkCmpKindFile = { fg = C.sky },
+	BlinkCmpKindReference = { fg = C.sakura },
+	BlinkCmpKindFolder = { fg = C.cloud },
+	BlinkCmpKindEnumMember = { fg = C.sakura },
+	BlinkCmpKindConstant = { fg = C.lavender },
+	BlinkCmpKindStruct = { fg = C.sky },
+	BlinkCmpKindEvent = { fg = C.sky },
+	BlinkCmpKindOperator = { fg = C.sky },
+	BlinkCmpKindTypeParameter = { fg = C.sky },
+	BlinkCmpKindCopilot = { fg = C.lavender },
+
 	-- treesitter
 	-- Identifiers
 	["@variable"] = { fg = C.text },
