@@ -253,6 +253,9 @@ M = {
 	BlinkCmpKindTypeParameter = { fg = C.sky },
 	BlinkCmpKindCopilot = { fg = C.lavender },
 
+	-- Golang
+	goImport = { fg = C.blue },
+
 	-- treesitter
 	-- Identifiers
 	["@variable"] = { fg = C.text },
@@ -282,7 +285,7 @@ M = {
 
 	-- Types
 	["@type"] = { link = "Type" },
-	["@type.builtin"] = { fg = C.red }, -- int, float, etc.
+	["@type.builtin"] = { fg = C.dark_orange }, -- int, float, etc.
 	["@type.definition"] = { link = "Type" },
 
 	["@attribute"] = { link = "Constant" }, -- python decorators
@@ -298,7 +301,7 @@ M = {
 	["@function.method.call"] = { link = "Function" },
 
 	["@constructor"] = { fg = C.sky }, -- {} in lua, __init__ in Python
-	["@constructor.python"] = { fg = C.lavender },
+	["@constructor.python"] = { fg = C.yellow },
 	["@operator"] = { link = "Operator" },
 
 	-- Keywords
@@ -308,7 +311,7 @@ M = {
 	["@keyword.coroutine"] = { link = "Keyword" },
 	["@keyword.function"] = { fg = C.sakura }, -- def in py
 	["@keyword.operator"] = { link = "Operator" },
-	["@keyword.import"] = { fg = C.sub_sakura },
+	["@keyword.import"] = { fg = C.blue },
 	["@keyword.repeat"] = { fg = C.cloud }, -- for, while
 	["@keyword.return"] = { fg = C.sakura }, -- return
 	["@keyword.debug"] = { link = "Exception" },
@@ -318,6 +321,9 @@ M = {
 
 	["@keyword.directive"] = { link = "PreProc" },
 	["@keyword.directive.define"] = { link = "Define" },
+
+	-- Modules
+	["@module"] = { fg = C.dark_orange },
 
 	-- Punctuation
 	["@punctuation.delimiter"] = { link = "Delimiter" },

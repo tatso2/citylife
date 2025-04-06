@@ -23,9 +23,13 @@ M.colors = {
 	green = "#BFE3A8", -- strings
 	sakura = "#E3A8D4", -- keywords
 	yellow = "#E2E3A8",
-	sky = "#A8D9E3",
+	sky = "#A8C6E3",
 	lavender = "#A8B8E3",
 	cloud = "#A8C1E3",
+
+	-- Extra accent colours for syntax
+	blue = "#7BB5E8",
+	dark_orange = "#E8B77B",
 
 	-- Sub accent colours
 	sub_sakura = "#DABEE5",
