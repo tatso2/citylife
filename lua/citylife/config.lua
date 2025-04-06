@@ -254,7 +254,9 @@ M = {
 	BlinkCmpKindCopilot = { fg = C.lavender },
 
 	-- Golang
+	goPackage = { fg = C.sakura },
 	goImport = { fg = C.blue },
+	goFunctionReturn = { fg = C.sakura },
 
 	-- treesitter
 	-- Identifiers
